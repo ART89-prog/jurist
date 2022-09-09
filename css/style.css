@@ -190,6 +190,10 @@
   margin-top: 20px;
 }
 
+.services-page .decisions__image img {
+  object-fit: cover;
+}
+
 
 
 @media print, (max-width: 1200px) {
@@ -296,7 +300,7 @@
     margin-bottom: 0;
   }
   .consultant .block-contact__time:before {
-    left: 77px;
+    left: 56px;
   }
   .consultant_wrap {
     padding: 30px;
@@ -335,4 +339,12 @@
 
 
 
+}
+
+
+
+@media print, (max-width: 768px) {
+  .consultant .block-contact__time:before {
+    left: 47px;
+  }  
 }
