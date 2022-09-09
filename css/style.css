@@ -189,14 +189,211 @@
   color: #262626;
   margin-top: 20px;
 }
-
 .services-page .decisions__image img {
   object-fit: cover;
 }
 
 
 
+.price {
+  background: url(../img/img/price_bg.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+.first-section {
+  padding-bottom: 141px;
+}
+.first-section .container {
+  display: flex;
+  position: relative;
+}
+.first-section__heading {
+  margin-bottom: 40px;
+  text-align: start;
+}
+.first-section-text {
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #262626;
+  max-width: 350px;
+}
+.first-section-text span {
+  font-weight: 700;
+}
+.first-section_img {
+  position: absolute;
+  bottom: -134px;
+  right: 84px;
+}
+
+
+.price-page .faq__content {
+  width: 100%;
+}
+.price-page .faq-item:before {
+  display: none;
+}
+.price-page .faq-item__title {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #262626;
+}
+.price-page .faq-item__wrap {
+  padding-top: 35px;
+}
+.price-page .faq-item__wrap-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #262626; 
+  margin-bottom: 20px; 
+}
+.price-page .faq-item-list {
+  list-style: none;
+  padding: 0;
+}
+.price-page .faq-item-list li {
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #999999;
+}
+.price-page .faq-item-list .name {
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #999999;
+  margin-right: -20%;
+  width: 94%;
+  vertical-align: middle;
+  overflow: hidden;
+  display: inline-block;
+}
+.price-page .faq-item-list .name:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  margin: 0 -99% 0 3px;
+  vertical-align: baseline;
+  border-bottom: 1px dotted #939b9f;
+}
+.price-page .faq-item-list .value {
+  display: inline-block;
+  letter-spacing: normal;
+  padding-left: 3px;
+  margin-left: 20%;
+  width: 5%;
+  vertical-align: bottom;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #999999;
+  white-space: nowrap;
+}
+.price-page .faq:before {
+  display: none;
+}
+.price-page .faq__wrap {
+  padding-top: 3.8125rem;
+}
+.price-page .faq__content {
+  grid-template-columns: 1fr;
+}
+.price-page .faq-item__header {
+  cursor: pointer;
+}
+
+
+.payment {
+  padding-bottom: 67px;
+}
+.payment__heading {
+  text-align: start;
+  margin-bottom: 107px;
+}
+.payment__items {
+  display: flex;
+  margin-left: -260px;
+  margin-bottom: -100px;
+  flex-wrap: wrap;
+}
+.payment__items > * {
+  width: calc(100%/3 - 260px);
+  margin-left: 260px;
+  margin-bottom: 100px;
+}
+.payment__num {
+  top: -3.375rem;
+  left: 0;
+  color: #fff;
+  width: 3.75rem;
+  height: 3.75rem;
+  background: #3385e8;
+  text-align: center;
+  border-radius: 50%;
+  font-weight: 500;
+  font-size: 1.375rem;
+  line-height: 1.375rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.payment__num {
+  width: 33px;
+  height: 33px;
+  font-size: 10px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.payment__title {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #262626;
+  margin-bottom: 19px;
+}
+.payment__text {
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #262626;
+}
+
+.payment__item {
+  color: #262626;
+  position: relative;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+}
+.payment__text span {
+  font-weight: 700;
+}
+
+
+
+
+
+
 @media print, (max-width: 1200px) {
+  .payment__items {
+    display: flex;
+    margin-left: -20px;
+    margin-bottom: -30px;
+  }
+  .payment__items > * {
+    width: calc(100%/2 - 60px);
+    margin-left: 60px;
+    margin-bottom: 10px;
+}
   .consultant_wrap {
     padding: 60px 50px;
   }
@@ -211,6 +408,8 @@
   }
   .consultant_image img {
     width: 100%;
+  }.payment__text br {
+    display: none;
   }
 
 
