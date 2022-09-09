@@ -21,18 +21,18 @@
   text-decoration: none;
   font-size: 10px;
   line-height: 52px;
-  font-weight: 700;
+  font-weight: 400;
   color: #111111; 
   margin-right: 10px;
 }
 .breadcrumbs .current {
   font-size: 10px;
   line-height: 52px;
-  font-weight: 700;
+  font-weight: 400;
   color: #999999;
   margin-left: 14px;
 }
-.decisions {
+.services-page .decisions {
   padding-bottom: 5.75rem;
 }
 .decisions__heading {
@@ -326,10 +326,10 @@
     font-size: 23px;
     margin-bottom: 15px;
   } 
-  .decisions__heading {
+  .services-page .decisions__heading {
     font-size: 26px;
   }
-  .decisions__heading br {
+  .services-page .decisions__heading br {
     display: none;
   }
   .services-page {
@@ -343,8 +343,17 @@
 
 
 
-@media print, (max-width: 768px) {
+@media print, (max-width: 480px) {
   .consultant .block-contact__time:before {
-    left: 47px;
+    left: 54px;
   }  
+  .services-page .decisions__main {
+    grid-template-columns: 1fr;
+    border-radius: 10px;
+  }
+  .services-page .decisions {
+    padding-bottom: 2.75rem;
+  }
+
+
 }
