@@ -239,8 +239,10 @@
   line-height: 28px;
   font-weight: 700;
   color: #262626;
+  background: none;
 }
-.price-page .faq-item__wrap {
+.faq-item__content {
+  padding: 0 0 0 45px;
   padding-top: 35px;
 }
 .price-page .faq-item__wrap-header {
@@ -307,6 +309,22 @@
 .price-page .faq-item__header {
   cursor: pointer;
 }
+.faq-item.open .faq-item__num {
+  color: #fff;
+  background: #3385e8;
+  transition: .25s;
+}
+.faq-item .faq-item__title img {
+  margin-right: 5px;
+}
+.faq-item.open .faq-item__title img {
+  transform: rotate(90deg);
+  transition: .25s;
+}
+
+
+
+
 
 
 .payment {
@@ -319,13 +337,13 @@
 .payment__items {
   display: flex;
   margin-left: -260px;
-  margin-bottom: -100px;
+  margin-bottom: -90px;
   flex-wrap: wrap;
 }
 .payment__items > * {
   width: calc(100%/3 - 260px);
   margin-left: 260px;
-  margin-bottom: 100px;
+  margin-bottom: 90px;
 }
 .payment__num {
   top: -3.375rem;
@@ -384,16 +402,7 @@
 
 
 @media print, (max-width: 1200px) {
-  .payment__items {
-    display: flex;
-    margin-left: -20px;
-    margin-bottom: -30px;
-  }
-  .payment__items > * {
-    width: calc(100%/2 - 60px);
-    margin-left: 60px;
-    margin-bottom: 10px;
-}
+
   .consultant_wrap {
     padding: 60px 50px;
   }
@@ -408,9 +417,21 @@
   }
   .consultant_image img {
     width: 100%;
-  }.payment__text br {
+  }
+  .payment__text br {
     display: none;
   }
+  .first-section_img {
+    bottom: -138px;
+    right: 0;
+}
+.payment__items {
+  margin-left: -60px;
+}
+.payment__items > * {
+  width: calc(100%/3 - 60px);
+  margin-left: 60px;
+}
 
 
 
@@ -446,6 +467,38 @@
     padding-top: 3.375rem;
     padding-bottom: 2.5rem;
   }
+  .price {
+    background: none;
+  }
+  .price .first-section {
+    background: linear-gradient(-90.0deg, #dad9d9 0%, #ffffff 100%);
+  }
+  .price .header,
+  .price .breadcrumbs {
+    background: linear-gradient(-90.0deg, #dad9d9 0%, #ffffff 100%);
+  }
+  .price .breadcrumbs {
+    margin-bottom: 0px;
+    padding-bottom: 23px;
+  }
+  .price .services-page {
+    padding-top: 80px;
+  }
+  .first-section {
+    padding-bottom: 50px;
+  }
+  .first-section_img {
+    bottom: -50px;
+    right: -45px;
+    width: 444px;
+  }
+  .payment__items {
+    margin-left: -40px;
+  }
+  .payment__items > * {
+    width: calc(100%/2 - 40px);
+    margin-left: 40px;
+}
 
 
 
