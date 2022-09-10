@@ -3,13 +3,10 @@
   display: block;
   max-width: 100%;
 }
-.sevices .decisions__image {
+.services .decisions__image {
   height: 100%;
 }
-.services-page {
-  padding-top: 11.250rem;
-}
-.sevices {
+.services {
   background: url(../img/img/service_bg.png);
   background-repeat: no-repeat;
   background-position: center top;
@@ -20,21 +17,27 @@
 .breadcrumbs a {
   text-decoration: none;
   font-size: 10px;
-  line-height: 52px;
+  line-height: 1.2;
   font-weight: 400;
   color: #111111; 
-  margin-right: 10px;
 }
 .breadcrumbs .current {
   font-size: 10px;
-  line-height: 52px;
+  line-height: 1.2;
   font-weight: 400;
   color: #999999;
+}
+.breadcrumbs .sep {
+  margin-right: 10px;
   margin-left: 14px;
 }
 .services-page .decisions {
   padding-bottom: 5.75rem;
 }
+.services {
+  padding-top: 11.25rem;
+}
+
 .decisions__heading {
   text-align: start;
   max-width: 100%;
@@ -154,27 +157,27 @@
 }
 
 
-.sevices .content-block {
+.services .content-block {
   padding-top: 6.375rem;
   padding-bottom: 2.5rem;
 }
-.sevices .content-block__heading {
+.services .content-block__heading {
   margin-bottom: 2.25rem;
   text-align: start;
   font-weight: 400;
 }
-.sevices .content-block__heading span {
+.services .content-block__heading span {
   font-weight: 700;
 }
-.sevices .content-block ul li {
+.services .content-block ul li {
   padding-left: 10px;
   position: relative;
   display: flex;
 }
-.sevices .content-block ul li.underline {
+.services .content-block ul li.underline {
   text-decoration: underline;
 }
-.sevices .content-block ul li:before {
+.services .content-block ul li:before {
   position: absolute;
   content: "";
   width: 4px;
@@ -183,7 +186,7 @@
   top: 11px;
   background: #262626;
 }
-.sevices .content-block h3 {
+.services .content-block h3 {
   font-size: 16px;
   font-weight: 700;
   color: #262626;
@@ -223,7 +226,7 @@
 }
 .first-section_img {
   position: absolute;
-  bottom: -134px;
+  bottom: -166px;
   right: 84px;
 }
 
@@ -397,7 +400,55 @@
 }
 
 
-
+.service-page {
+  background: url(../img/img/services_bg.png);
+  background-repeat: no-repeat;
+}
+.service {
+  margin-bottom: 94px;
+}
+.service__heading {
+  text-align: start;
+}
+.service__item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 72px;
+}
+.service__item:last-child {
+  margin-bottom: 0;
+}
+.service__item-img {
+  width: 474px;
+  height: 318px;
+  flex-shrink: 0;
+}
+.service__item-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;  
+}
+.service__item-text {
+  position: relative;
+  width: 100%;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #262626;
+  margin-left: 67px;
+}
+.service__item-text img {
+  position: absolute;
+  right: 0;
+  top: 50%;  
+  transform: translateY(-50%);
+}
+.service__item-text span {
+  margin-right: 20px;
+  display: inline-block;
+}
 
 
 
@@ -422,16 +473,41 @@
     display: none;
   }
   .first-section_img {
-    bottom: -138px;
+    bottom: -141px;
     right: 0;
-}
-.payment__items {
-  margin-left: -60px;
-}
-.payment__items > * {
-  width: calc(100%/3 - 60px);
-  margin-left: 60px;
-}
+  }
+  .payment__items {
+    margin-left: -60px;
+  }
+  .payment__items > * {
+    width: calc(100%/3 - 60px);
+    margin-left: 60px;
+  }
+  .service__item-img {
+    width: 310px;
+    height: 208px;
+  }
+  .service__item {
+    margin-bottom: 40px;
+  }
+  .service__item-text {
+    font-size: 22px;
+    line-height: 28px;
+    margin-left: 30px;
+  }
+  .services {
+    padding-top: 5rem;
+  }
+  .price {
+    background: none;
+  }
+  .price .first-section {
+    background: linear-gradient(-90.0deg, #dad9d9 0%, #ffffff 100%);
+  }
+  .price .header,
+  .price .breadcrumbs {
+    background: linear-gradient(-90.0deg, #dad9d9 0%, #ffffff 100%);
+  }
 
 
 
@@ -460,29 +536,13 @@
   .consultant_wrap {
     padding: 40px 30px;
   }
-  .services-page {
-    padding-top: 5.25rem;
-  }
-  .sevices .content-block {
+  .services .content-block {
     padding-top: 3.375rem;
     padding-bottom: 2.5rem;
-  }
-  .price {
-    background: none;
-  }
-  .price .first-section {
-    background: linear-gradient(-90.0deg, #dad9d9 0%, #ffffff 100%);
-  }
-  .price .header,
-  .price .breadcrumbs {
-    background: linear-gradient(-90.0deg, #dad9d9 0%, #ffffff 100%);
   }
   .price .breadcrumbs {
     margin-bottom: 0px;
     padding-bottom: 23px;
-  }
-  .price .services-page {
-    padding-top: 80px;
   }
   .first-section {
     padding-bottom: 50px;
@@ -490,7 +550,7 @@
   .first-section_img {
     bottom: -50px;
     right: -45px;
-    width: 444px;
+    width: 365px;
   }
   .payment__items {
     margin-left: -40px;
@@ -498,9 +558,12 @@
   .payment__items > * {
     width: calc(100%/2 - 40px);
     margin-left: 40px;
-}
-.price-page .faq-item-list .name {
-  width: 89%;
+  }
+  .price-page .faq-item-list .name {
+    width: 89%;
+  }
+  .services {
+    padding-top: 3.75rem;
 }
 
 
@@ -568,16 +631,16 @@
   .consultant .block-contact__title {
     font-size: 17px;
   }
-  .sevices .content-block {
+  .services .content-block {
     padding-top: 2.375rem;
     padding-bottom: 2.5rem;
   }
-  .sevices .content-block h3 {
+  .services .content-block h3 {
     font-size: 16px;
     margin-top: 12px;
     margin-bottom: 12px;
   }
-  .sevices .content-block__heading {
+  .services .content-block__heading {
     font-size: 23px;
     margin-bottom: 15px;
   } 
@@ -587,61 +650,78 @@
   .services-page .decisions__heading br {
     display: none;
   }
-  .services-page {
-    padding-top: 4.25rem;
+  .first-section_img {
+    width: 360px;
   }
-  .price .services-page {
-    padding-top: 60px;
+  .price-page .faq-item__title {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .price-page .faq__content {
+    padding-top: 15px;
+  }
+  .price-page .faq-item__wrap-header {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+  .price-page .faq-item-list .name {
+    width: 82%;
+  }
+  .price-page .faq-item {
+    position: relative;
+    padding-bottom: 0.1875rem;
+    margin-bottom: 0.125rem;
+  }
+  .price-page .faq-item__content {
+    padding-top: 25px;
+  }
+  .payment__title {
+    font-size: 16px;
+    margin-bottom: 7px;
+  }
+  .payment__items {
+    margin-bottom: -70px;
+  }
+  .payment__items > * {
+    margin-bottom: 70px;
+  }
+  .payment__num {
+    top: -2.875rem;
+  }
+  .price-page .faq__wrap {
+    padding-top: 1.8125rem;
+  }
+  .payment {
+    padding-bottom: 0;
+    margin-bottom: 30px;
+  }
+  .payment__heading {
+    margin-bottom: 80px;
+  }
+  .service__item-img {
+    width: 190px;
+    height: 127px;
+  }
+  .service__item-img img {
+    border-radius: 10px;
+  }
+  .service__item-text {
+    font-size: 18px;
+    line-height: 25px;
+    margin-left: 20px;
+  }
+  .service {
+    margin-bottom: 50px;
+  }
+  .service__item {
+    margin-bottom: 25px;
+  }
+  .breadcrumbs .sep {
+    margin-right: 6px;
+    margin-left: 8px;
 }
-.first-section_img {
-  width: 360px;
-}
-.price-page .faq-item__title {
-  font-size: 16px;
-  line-height: 22px;
-}
-.price-page .faq__content {
-  padding-top: 15px;
-}
-.price-page .faq-item__wrap-header {
-  font-size: 15px;
-  line-height: 22px;
-  margin-bottom: 10px;
-}
-.price-page .faq-item-list .name {
-  width: 82%;
-}
-.price-page .faq-item {
-  position: relative;
-  padding-bottom: 0.1875rem;
-  margin-bottom: 0.125rem;
-}
-.price-page .faq-item__content {
-  padding-top: 25px;
-}
-.payment__title {
-  font-size: 16px;
-  margin-bottom: 7px;
-}
-.payment__items {
-  margin-bottom: -70px;
-}
-.payment__items > * {
-  margin-bottom: 70px;
-}
-.payment__num {
-  top: -2.875rem;
-}
-.price-page .faq__wrap {
-  padding-top: 1.8125rem;
-}
-.payment {
-  padding-bottom: 0;
-  margin-bottom: 30px;
-}
-.payment__heading {
-  margin-bottom: 80px;
-}
+
 
 
 
@@ -665,52 +745,68 @@
   }
   .first-section__heading {
     margin-bottom: 20px;
-}
-.first-section {
-  padding-bottom: 30px;
-}
-.payment__items > * {
-  margin-bottom: 70px;
-  width: 100%;
-}
-.payment__title {
-  font-size: 15px;
-  margin-bottom: 2px;
-}
-.payment__num {
-  top: -2.575rem;
-}
-.price-page .faq-item__title {
-  font-size: 15px;
-  line-height: 22px;
-}
-.price-page .faq-item__title {
-  padding-left: 0;
-}
-.price-page .faq-item__content {
-  padding-top: 8px;
-  padding-left: 0;
-}
-.price-page .faq-item-list .name {
-  font-size: 12px;
-  line-height: 22px;
-  margin-right: -27%;
-}
-.price-page .faq-item-list .value {
-  padding-left: 3px;
-  margin-left: 20%;
-  width: 5%;
-  font-size: 12px;
-  line-height: 22px;
-}
-.price-page .faq-item-list .name:after {
-  display: none;
-}
-.price-page .faq-item__wrap-header {
-  font-size: 14px;
-  line-height: 20px;
-  margin-bottom: 10px;
-}
+  }
+  .first-section {
+    padding-bottom: 30px;
+  }
+  .payment__items > * {
+    margin-bottom: 70px;
+    width: 100%;
+  }
+  .payment__title {
+    font-size: 15px;
+    margin-bottom: 2px;
+  }
+  .payment__num {
+    top: -2.575rem;
+  }
+  .price-page .faq-item__title {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .price-page .faq-item__title {
+    padding-left: 0;
+  }
+  .price-page .faq-item__content {
+    padding-top: 8px;
+    padding-left: 0;
+  }
+  .price-page .faq-item-list .name {
+    font-size: 12px;
+    line-height: 22px;
+    margin-right: -27%;
+  }
+  .price-page .faq-item-list .value {
+    padding-left: 3px;
+    margin-left: 24%;
+    width: 5%;
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .price-page .faq-item-list .name:after {
+    display: none;
+  }
+  .price-page .faq-item__wrap-header {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  .service__item {
+    flex-direction: column;
+  }
+  .service__item-text {
+    font-size: 16px;
+    line-height: 22px;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .service__item-img {
+    width: 100%;
+    height: auto;
+  }
+  .service {
+    margin-bottom: 40px;
+  }
 
 
 }
